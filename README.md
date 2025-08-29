@@ -13,6 +13,19 @@
   [![SQLite](https://img.shields.io/badge/SQLite-3.x-003B57?style=flat&logo=sqlite)](https://www.sqlite.org/)
 </div>
 
+## App Screenshots
+Homepage Dashboard
+![Homepage](./screenshots/homepage.png)
+Profile Page
+![ProfilePage](./screenshots/ProfilePage.png)
+Set a Routine
+![Routines](./screenshots/Routines.png)
+Check Progress
+![Progress](./screenshots/progress.png)
+Start a workout session
+![workout](./screenshots/workoutsession.png)
+
+
 ## ✨ Features
 
 ### 🏠 **Dashboard**
