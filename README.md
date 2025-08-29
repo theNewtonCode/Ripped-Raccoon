@@ -1,46 +1,210 @@
-# Getting Started with Create React App
+# 🦝 RippedRaccoon - Fitness Tracking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="client/src/images/Logo_RR.png" alt="RippedRaccoon Logo" width="120" height="120" style="border-radius: 50%;">
+  
+  **UNLEASH THE BEAST WITHIN**
+  
+  A modern, full-stack fitness tracking application with a cyberpunk-inspired neon theme.
+  
+  [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat&logo=react)](https://reactjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+  [![Node.js](https://img.shields.io/badge/Node.js-18.x-339933?style=flat&logo=node.js)](https://nodejs.org/)
+  [![SQLite](https://img.shields.io/badge/SQLite-3.x-003B57?style=flat&logo=sqlite)](https://www.sqlite.org/)
+</div>
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+### 🏠 **Dashboard**
+- Real-time workout statistics and KPIs
+- Current & longest workout streaks
+- Weekly workout frequency tracking
+- Quick action buttons for immediate workout start
 
-### `npm start`
+### 👤 **Profile Management**
+- Complete user profile with fitness goals
+- Body weight tracking with history
+- Metric/Imperial unit preferences
+- Progress visualization
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 📋 **Workout Routines**
+- Pre-built professional workout routines
+- Custom routine creation with exercise selection
+- Muscle group categorization
+- Sets and reps customization
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 💪 **Live Workout Sessions**
+- Interactive workout logging
+- Rest timer with customizable intervals
+- Real-time set completion tracking
+- Exercise progression monitoring
+- Workout pause/resume functionality
 
-### `npm test`
+### 📈 **Progress Tracking**
+- Exercise-specific progress charts
+- Body weight trend analysis
+- Workout frequency analytics
+- Volume and strength progression
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ⚙️ **Settings & Data Management**
+- Workout preferences configuration
+- Complete data export/import
+- Workout history reset functionality
+- Local storage integration
 
-### `npm run build`
+## 🎨 Design Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Cyberpunk Neon Theme** - Dark background with electric blue, green, and orange accents
+- **Responsive Design** - Works seamlessly on desktop and mobile devices
+- **Smooth Animations** - Glowing effects, hover transitions, and pulse animations
+- **Intuitive UX** - Clean navigation with emoji icons and clear visual hierarchy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏗️ Architecture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+RippedRaccoon_P1/
+├── client/                 # React TypeScript Frontend
+│   ├── src/
+│   │   ├── components/     # React components with individual CSS
+│   │   ├── images/         # App assets and icons
+│   │   └── App.tsx         # Main application component
+│   └── package.json
+├── server/                 # Node.js Express Backend
+│   ├── database/          # SQLite schema and seed data
+│   ├── index.js           # Express server with REST API
+│   └── package.json
+└── package.json           # Root scripts for development
+```
 
-### `npm run eject`
+## 🚀 Quick Start
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
+- Node.js 18.x or higher
+- npm or yarn package manager
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/rippedraccoon.git
+   cd RippedRaccoon_P1
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. **Install all dependencies**
+   ```bash
+   npm run install-all
+   ```
 
-## Learn More
+3. **Start development servers**
+   ```bash
+   npm run dev
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:5000
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Individual Development
+```bash
+# Frontend only (React dev server)
+npm run client
+
+# Backend only (Express server)
+npm run server
+```
+
+## 🔌 API Endpoints
+
+### Core Endpoints
+- `GET /api/health` - Server health check
+- `GET /api/exercises` - Get all exercises
+- `GET /api/routines` - Get workout routines
+- `POST /api/routines` - Create custom routine
+
+### User Management
+- `GET /api/users/:id` - Get user profile
+- `PUT /api/users/:id` - Update user profile
+- `POST /api/weight-logs` - Log body weight
+- `GET /api/weight-logs/:userId` - Get weight history
+
+### Workout Tracking
+- `POST /api/workouts` - Start workout session
+- `PUT /api/workouts/:id` - Update workout
+- `POST /api/workout-logs` - Log exercise sets
+- `GET /api/summary/:userId` - Get dashboard KPIs
+
+### Progress & Analytics
+- `GET /api/progress/exercise/:exerciseId` - Exercise progress
+- `GET /api/progress/bodyweight/:userId` - Weight trends
+- `GET /api/progress/workouts/:userId` - Workout frequency
+
+### Data Management
+- `GET /api/export/:userId` - Export user data
+- `POST /api/import/:userId` - Import user data
+- `DELETE /api/reset/:userId` - Reset all workout records
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **React 18** with TypeScript
+- **CSS3** with custom neon theme
+- **Recharts** for data visualization
+- **Responsive design** with CSS Grid/Flexbox
+
+### Backend
+- **Node.js** with Express.js
+- **SQLite** database with file persistence
+- **CORS** enabled for cross-origin requests
+- **RESTful API** architecture
+
+### Development Tools
+- **Concurrent** for running multiple processes
+- **Component-based CSS** architecture
+- **TypeScript** for type safety
+- **Modern ES6+** JavaScript features
+
+## 📱 Deployment
+
+### Free Hosting Options
+
+**Frontend (Vercel - Recommended)**
+```bash
+npm install -g vercel
+cd client && npm run build
+vercel --prod
+```
+
+**Backend (Railway - Recommended)**
+```bash
+npm install -g @railway/cli
+cd server
+railway login && railway init && railway up
+```
+
+**Alternative Options:**
+- Frontend: Netlify, GitHub Pages
+- Backend: Render, Heroku
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Abhyuday** - *Full Stack Developer*
+
+---
+
+<div align="center">
+  <strong>🦝 RIPPED RACCOON - UNLEASH THE BEAST WITHIN 🦝</strong>
+  
+  Made with ❤️ and lots of ☕
+</div>
