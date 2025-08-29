@@ -1,0 +1,89 @@
+.profile-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  color: #00ffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-form {
+  margin-bottom: 30px;
+}
+
+.profile-form-group {
+  margin-bottom: 15px;
+}
+
+.profile-form-group-inline {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.profile-label {
+  color: #00ffff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.profile-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.profile-flex-1 {
+  flex: 1;
+}
+
+.profile-section-header {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-section-header-orange {
+  color: #ff6600;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-weight-history {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.profile-weight-log-item {
+  padding: 10px;
+  border: 1px solid #00ffff;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  color: #ffffff;
+  list-style: none;
+}
+
+.profile-weight-log-item strong {
+  color: #39ff14;
+}
+
+.profile-weight-logs {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-no-data {
+  color: #ffffff;
+  text-align: center;
+}
+
+.profile-button-small {
+  padding: 8px 16px;
+}

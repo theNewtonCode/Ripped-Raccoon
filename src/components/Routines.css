@@ -1,0 +1,121 @@
+.routines-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.routines-header {
+  color: #00ffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.routines-header-section {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+}
+
+.routines-header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.routines-form-group {
+  margin-bottom: 20px;
+}
+
+.routines-label {
+  color: #00ffff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.routines-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.routines-exercise-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.routines-exercise-card {
+  margin-bottom: 10px;
+}
+
+.routines-exercise-card h4 {
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.routines-exercise-card p {
+  color: #00ffff;
+  margin: 5px 0;
+}
+
+.routines-exercise-card .sets-reps {
+  color: #39ff14;
+}
+
+.routines-selected-exercise {
+  margin-bottom: 10px;
+}
+
+.routines-selected-exercise .exercise-name {
+  color: #ffffff;
+}
+
+.routines-sets-reps-controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.routines-sets-reps-controls > div {
+  flex: 1;
+}
+
+.routines-sets-reps-controls input {
+  width: 60px;
+  padding: 4px;
+  margin-left: 5px;
+}
+
+.routines-available-exercises {
+  color: #ff6600;
+  text-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+}
+
+.routines-exercise-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.routines-exercise-item {
+  padding: 8px;
+  border-bottom: 1px solid #00ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.routines-exercise-item .exercise-info {
+  color: #ffffff;
+}
+
+.routines-create-actions {
+  margin-top: 20px;
+}
+
+.routines-create-actions .gym-button {
+  margin-right: 10px;
+}
+
+.routines-back-button {
+  margin-bottom: 20px;
+}

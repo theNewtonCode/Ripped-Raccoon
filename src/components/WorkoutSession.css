@@ -1,0 +1,156 @@
+.workout-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.workout-header {
+  color: #00ffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.workout-routine-selector {
+  margin-bottom: 30px;
+}
+
+.workout-label {
+  color: #00ffff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.workout-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.workout-progress {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.workout-progress h3 {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+  margin: 0 0 10px 0;
+}
+
+.workout-progress-text {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.workout-exercise-card {
+  margin-bottom: 20px;
+}
+
+.workout-exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.workout-exercise-title {
+  color: #ffffff;
+  margin: 0;
+}
+
+.workout-exercise-info {
+  color: #00ffff;
+  margin: 5px 0;
+}
+
+.workout-sets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.workout-set-card {
+  background: linear-gradient(145deg, #2a2a3e, #1e1e32);
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.workout-set-card.completed {
+  border-color: #39ff14;
+  background: linear-gradient(145deg, #39ff1420, #2a2a3e);
+}
+
+.workout-set-card h4 {
+  color: #00ffff;
+  margin: 0 0 10px 0;
+}
+
+.workout-set-card.completed h4 {
+  color: #39ff14;
+}
+
+.workout-set-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.workout-set-inputs input {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+}
+
+.workout-set-button {
+  width: 100%;
+  padding: 8px;
+}
+
+.workout-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.workout-actions .gym-button {
+  margin: 0 10px;
+}
+
+.workout-timer {
+  background: linear-gradient(45deg, #ff6600, #ff0080);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.5);
+}
+
+.workout-timer h3 {
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.workout-timer-display {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  margin: 15px 0;
+}
+
+.workout-timer-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.workout-no-routine {
+  text-align: center;
+  color: #ffffff;
+}

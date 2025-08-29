@@ -1,0 +1,135 @@
+.settings-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-header {
+  color: #00ffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.settings-section {
+  margin-bottom: 30px;
+}
+
+.settings-section-header {
+  color: #39ff14;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+  margin-bottom: 20px;
+}
+
+.settings-form-group {
+  margin-bottom: 20px;
+}
+
+.settings-label {
+  color: #00ffff;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.settings-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.settings-range-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.settings-range {
+  flex: 1;
+  height: 8px;
+  background: linear-gradient(90deg, #1a1a2e, #00ffff);
+  border-radius: 5px;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.settings-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #00ffff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.settings-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #00ffff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.settings-range-value {
+  color: #39ff14;
+  font-weight: bold;
+  min-width: 60px;
+  text-align: center;
+}
+
+.settings-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.settings-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #00ffff;
+}
+
+.settings-checkbox-label {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.settings-danger-zone {
+  border: 2px solid #dc3545;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(145deg, #1a1a2e, #2d1b1b);
+}
+
+.settings-danger-header {
+  color: #dc3545;
+  text-shadow: 0 0 10px rgba(220, 53, 69, 0.8);
+  margin-bottom: 15px;
+}
+
+.settings-danger-text {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.settings-danger-button {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  color: white;
+  border: 2px solid #dc3545;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.settings-danger-button:hover {
+  background: linear-gradient(45deg, #c82333, #bd2130);
+  box-shadow: 0 0 20px rgba(220, 53, 69, 0.6);
+  transform: translateY(-2px);
+}
